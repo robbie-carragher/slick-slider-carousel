@@ -1,0 +1,73 @@
+.slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Adjust this value as needed for your design */
+    margin: 0px 20px;
+    text-align: center;
+}
+.slick-slide img {
+    width: 150px; /* Set a fixed width for all images */
+    height: 150px; /* Set a fixed height for all images */
+    object-fit: contain; /* Ensure the image fits within the container */
+}
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: black;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: black;
+}
+.slick-prev:hover, .slick-next:hover, .slick-prev:focus, .slick-next:focus {
+    color: black;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:before {
+    content: '←';
+}
+.slick-next:before {
+    content: '→';
+}
+.slick-dots li button:before {
+    font-size: 12px;
+    color: black;
+    opacity: .5;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
+
+.slick-initialized .slick-slide {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: none !important;
+}
